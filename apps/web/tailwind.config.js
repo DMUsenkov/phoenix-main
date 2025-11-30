@@ -1,0 +1,150 @@
+
+export default {
+  content: ['./index.html', './src*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        phoenix: {
+          50: '#faf5ff',
+          100: '#f3e8ff',
+          200: '#e9d5ff',
+          300: '#d8b4fe',
+          400: '#c084fc',
+          500: '#a855f7',
+          600: '#9333ea',
+          700: '#7c3aed',
+          800: '#6d28d9',
+          900: '#5b21b6',
+          950: '#3b0764',
+        },
+        surface: {
+          DEFAULT: '#0a0a0b',
+          50: '#18181b',
+          100: '#1f1f23',
+          200: '#27272a',
+          300: '#3f3f46',
+          400: '#52525b',
+        },
+        glass: {
+          DEFAULT: 'rgba(255, 255, 255, 0.03)',
+          light: 'rgba(255, 255, 255, 0.06)',
+          medium: 'rgba(255, 255, 255, 0.1)',
+        },
+        obsidian: {
+          DEFAULT: '#050507',
+          light: '#0a0a0d',
+          deep: '#030304',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'glow-phoenix': 'radial-gradient(ellipse at center, rgba(124, 58, 237, 0.15) 0%, transparent 70%)',
+        'glow-subtle': 'radial-gradient(ellipse at center, rgba(255, 255, 255, 0.03) 0%, transparent 70%)',
+        'hero-gradient': 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(124, 58, 237, 0.25) 0%, transparent 50%)',
+        'hero-gradient-2': 'radial-gradient(ellipse 60% 40% at 80% 60%, rgba(168, 85, 247, 0.12) 0%, transparent 50%)',
+        'hero-gradient-3': 'radial-gradient(ellipse 50% 30% at 20% 80%, rgba(109, 40, 217, 0.1) 0%, transparent 50%)',
+        'section-glow': 'radial-gradient(ellipse 100% 50% at 50% 100%, rgba(124, 58, 237, 0.08) 0%, transparent 60%)',
+        'card-shine': 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%, transparent 100%)',
+        'premium-border': 'linear-gradient(135deg, rgba(168, 85, 247, 0.5) 0%, rgba(124, 58, 237, 0.2) 50%, rgba(109, 40, 217, 0.5) 100%)',
+        'noise': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\")",
+      },
+      boxShadow: {
+        'glow-sm': '0 0 20px -5px rgba(124, 58, 237, 0.3)',
+        'glow-md': '0 0 40px -10px rgba(124, 58, 237, 0.4)',
+        'glow-lg': '0 0 60px -15px rgba(124, 58, 237, 0.5)',
+        'glow-xl': '0 0 80px -20px rgba(124, 58, 237, 0.6)',
+        'glow-2xl': '0 0 120px -30px rgba(124, 58, 237, 0.7)',
+        'inner-glow': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.05)',
+        'glass': '0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 0 rgba(255, 255, 255, 0.05)',
+        'glass-hover': '0 16px 48px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.08)',
+        'premium': '0 0 0 1px rgba(124, 58, 237, 0.2), 0 8px 40px rgba(0, 0, 0, 0.4)',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.2s ease-out',
+        'slide-up': 'slideUp 0.3s ease-out',
+        'slide-down': 'slideDown 0.3s ease-out',
+        'scale-in': 'scaleIn 0.2s ease-out',
+        'glow-pulse': 'glowPulse 2s ease-in-out infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'float-slow': 'float 8s ease-in-out infinite',
+        'float-delayed': 'float 6s ease-in-out infinite 2s',
+        'reveal': 'reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'reveal-delayed': 'reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards',
+        'shimmer': 'shimmer 2s linear infinite',
+        'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+        'orbit': 'orbit 20s linear infinite',
+        'gradient-x': 'gradientX 3s ease infinite',
+        'gradient-y': 'gradientY 3s ease infinite',
+        'spin-slow': 'spin 20s linear infinite',
+        'ping-slow': 'ping 3s cubic-bezier(0, 0, 0.2, 1) infinite',
+        'morph': 'morph 8s ease-in-out infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideDown: {
+          '0%': { opacity: '0', transform: 'translateY(-10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.95)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        glowPulse: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.6' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0) translateX(0)' },
+          '25%': { transform: 'translateY(-8px) translateX(4px)' },
+          '50%': { transform: 'translateY(-4px) translateX(-4px)' },
+          '75%': { transform: 'translateY(-12px) translateX(2px)' },
+        },
+        reveal: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+        pulseGlow: {
+          '0%, 100%': { boxShadow: '0 0 40px -10px rgba(124, 58, 237, 0.4)' },
+          '50%': { boxShadow: '0 0 60px -10px rgba(124, 58, 237, 0.6)' },
+        },
+        orbit: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        gradientX: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+        gradientY: {
+          '0%, 100%': { backgroundPosition: '50% 0%' },
+          '50%': { backgroundPosition: '50% 100%' },
+        },
+        morph: {
+          '0%, 100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+          '25%': { borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%' },
+          '50%': { borderRadius: '50% 60% 30% 60% / 30% 60% 70% 40%' },
+          '75%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+        },
+      },
+      transitionDuration: {
+        '250': '250ms',
+      },
+    },
+  },
+  plugins: [],
+};
