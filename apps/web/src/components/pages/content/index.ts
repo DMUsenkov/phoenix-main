@@ -1,0 +1,9 @@
+export { ContentSection } from './ContentSection';
+export { LifeEventsSection } from './LifeEventsSection';
+export { AchievementsSection } from './AchievementsSection';
+export { EducationSection } from './EducationSection';
+export { CareerSection } from './CareerSection';
+export { ValuesSection } from './ValuesSection';
+export { QuotesSection } from './QuotesSection';
+export { MemorialMessagesSection } from './MemorialMessagesSection';
+export { FamilyRelationsSection } from './FamilyRelationsSection';
