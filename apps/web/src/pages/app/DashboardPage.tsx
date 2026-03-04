@@ -106,7 +106,7 @@ export function DashboardPage() {
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-semibold text-white">Последние страницы</h2>
             <Link to="/app/pages" className="text-phoenix-400 hover:text-phoenix-300 text-sm transition-colors">
-              Смотреть все ->
+              Смотреть все
             </Link>
           </div>
           <div className="space-y-3">

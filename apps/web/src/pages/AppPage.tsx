@@ -82,7 +82,7 @@ export function AppPage() {
 
         <div className="mt-12 text-center">
           <Link to="/" className="text-phoenix-600 hover:text-phoenix-700 font-medium">
-            <- Вернуться на главную
+            Назад на главную
           </Link>
         </div>
       </div>

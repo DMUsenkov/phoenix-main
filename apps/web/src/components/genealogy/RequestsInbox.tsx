@@ -130,7 +130,8 @@ export function RequestsInbox({ onClose: _onClose }: RequestsInboxProps) {
                   Запрос от {formatDate(request.created_at)}
                 </p>
                 <p className="text-xs text-zinc-500 mt-1 font-mono">
-                  {request.from_person_id.slice(0, 8)}... -> {request.to_person_id.slice(0, 8)}...
+                  {request.from_person_id.slice(0, 8)}...{' '}
+                  {'->'} {request.to_person_id.slice(0, 8)}...
                 </p>
               </div>
               <div className="flex items-center gap-2">

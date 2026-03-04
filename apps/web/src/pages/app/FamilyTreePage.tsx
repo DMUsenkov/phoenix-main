@@ -212,7 +212,7 @@ export function FamilyTreePage() {
       <div className="flex items-center justify-between p-4 border-b border-surface-200">
         <div className="flex items-center gap-4">
           <Link to={`/app/pages/${pageId}`} className="text-zinc-400 hover:text-white transition-colors">
-            <- Назад
+            Назад
           </Link>
           <div>
             <h1 className="text-xl font-bold text-white">Семейное дерево</h1>

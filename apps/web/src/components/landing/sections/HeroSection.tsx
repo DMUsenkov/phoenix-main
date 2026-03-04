@@ -69,7 +69,7 @@ export function HeroSection() {
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] backdrop-blur-sm border border-white/[0.08] mb-8 animate-reveal opacity-0">
           <Sparkles className="w-4 h-4 text-phoenix-400" />
           <span className="text-sm text-zinc-400">
-            QR -> <span className="text-phoenix-400 font-mono">/p/:slug</span> за 1 скан
+            QR {'->'} <span className="text-phoenix-400 font-mono">/p/:slug</span> за 1 скан
           </span>
         </div>
 

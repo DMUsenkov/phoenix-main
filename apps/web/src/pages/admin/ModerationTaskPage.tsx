@@ -124,7 +124,7 @@ export function ModerationTaskPage() {
     <div className="space-y-6 animate-fade-in">
       <div className="flex items-center gap-4">
         <Link to="/admin/moderation" className="text-zinc-400 hover:text-white transition-colors">
-          <- Назад
+          Назад
         </Link>
       </div>
 
